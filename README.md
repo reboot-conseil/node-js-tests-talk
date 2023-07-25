@@ -34,6 +34,8 @@ After you have installed a few dependencies and set up some conf. and your `pack
 
 Since automated tests return a non-zero exit code when they fail, you can use this to your advantage and put them in a CI pipeline.
 
+Also, you can be sure that you are testing frozen dependencies, which is not the case when you run the tests locally.
+
 ## Prerequisites (assuming you're on Ubuntu)
 
 - NodeJS >=18.x.x 
