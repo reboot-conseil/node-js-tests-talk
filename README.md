@@ -6,6 +6,7 @@
     - [`scenario-0`: I am not using automated tests](#scenario-0-i-am-not-using-automated-tests)
     - [`scenario-1`: I automate unit tests](#scenario-1-i-automate-unit-tests)
     - [`scenario-2`: I put my tests in a CI pipeline](#scenario-2-i-put-my-tests-in-a-ci-pipeline)
+    - [`scenario-3`: the `arrange act assert` pattern](#scenario-3-the-arrange-act-assert-pattern)
   - [Prerequisites (assuming you're on Ubuntu)](#prerequisites-assuming-youre-on-ubuntu)
   - [Contribution guidelines](#contribution-guidelines)
   - [Contributors](#contributors)
@@ -32,9 +33,18 @@ After you have installed a few dependencies and set up some conf. and your `pack
 
 ### `scenario-2`: I put my tests in a CI pipeline
 
-Since automated tests return a non-zero exit code when they fail, you can use this to your advantage and put them in a CI pipeline.
+Since automated tests return a non-zero exit code when they fail, you can use this to your advantage and put them in a CI pipeline. That way, you dramatically increase the confidence that you are not shipping unexpected behavior.
 
-Also, you can be sure that you are testing frozen dependencies, which is not the case when you run the tests locally.
+Also, you can be sure that:
+
+- you build the application before testing it
+- you are testing frozen dependencies, which is not the case when you run the tests locally.
+
+### `scenario-3`: the `arrange act assert` pattern
+
+In this scenario, we take a dive into the `arrange act assert` pattern, which is a way to structure your tests so that they are easy to read and maintain.
+
+This pattern helps you build various tests scenarii for your application, and it is a good way to start thinking about the behavior of your application.
 
 ## Prerequisites (assuming you're on Ubuntu)
 

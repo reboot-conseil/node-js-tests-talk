@@ -20,3 +20,7 @@ jobs:
       # scenario-2
       # frozen install of dependencies
       - run: cd scenario-2 && npm ci && npm run test
+
+      # scenario-3
+      # frozen install of dependencies
+      - run: cd scenario-3 && npm ci && npm run test
