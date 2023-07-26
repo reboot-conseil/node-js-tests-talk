@@ -2,6 +2,7 @@
 
 - [NodeJS tests talk](#nodejs-tests-talk)
   - [What is this ?](#what-is-this-)
+  - [Prerequisites](#prerequisites)
   - [Tests scenarii](#tests-scenarii)
     - [`scenario-0`: I am not using automated tests](#scenario-0-i-am-not-using-automated-tests)
     - [`scenario-1`: I automate unit tests](#scenario-1-i-automate-unit-tests)
@@ -11,7 +12,7 @@
     - [`scenario-5`: testing the endpoints of an API](#scenario-5-testing-the-endpoints-of-an-api)
     - [`scenario-6`: automated tests and I/O: uploads and fixtures](#scenario-6-automated-tests-and-io-uploads-and-fixtures)
     - [`scenario-7`: test theories](#scenario-7-test-theories)
-    - [`scenario-x`: our first integration test against a database](#scenario-x-our-first-integration-test-against-a-database)
+    - [`scenario-8`: our first integration test against a database](#scenario-8-our-first-integration-test-against-a-database)
     - [`scenario-x`: testing an NLP interface](#scenario-x-testing-an-nlp-interface)
   - [Prerequisites (assuming you're on Ubuntu)](#prerequisites-assuming-youre-on-ubuntu)
   - [Contribution guidelines](#contribution-guidelines)
@@ -27,6 +28,11 @@ All the scenarii are located in the `scenarii` folder, and are organized into `s
 So let's enjoy this testing bonanza !
 
 <!-- ! even the most elaborate test is just a demo, don't push the code as is in production -->
+
+## Prerequisites
+
+- NodeJS >=18.x.x
+- a standard Docker Desktop installation
 
 ## Tests scenarii
 
@@ -80,11 +86,13 @@ Sometimes, writing more or less the same tests, but with different inputs, can b
 
 In this scenario, we will see how to test theories, which are a way to test a function with different inputs and expected outputs.
 
-### `scenario-x`: our first integration test against a database
+### `scenario-8`: our first integration test against a database
 
 In this scenario, we are adding to our previous tests a test that will check that our application is able to connect to a database and perform some operations on it.
 
-Containers have made that sooo much easier, so we will use a docker container to run our database.
+We will use the scenario of a db service that runs migrations. We will test that the migrations are run correctly.
+
+Containers have made that sooo much easier, so we will use a docker container to run our database. This allows to set up more complex scenarii, such as: "what happens when we lose the connection to the database ?"
 
 We will also allow this to run in a CI.
 

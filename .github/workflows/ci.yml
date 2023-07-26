@@ -29,3 +29,10 @@ jobs:
 
       # scenario-6
       - run: cd scenario-6 && npm ci && npm run test
+
+      # scenario-7
+      - run: cd scenario-7 && npm ci && npm run test
+
+      # scenario-8
+      - run: docker compose up -d
+      - run: cd scenario-8 && npm ci && npm run test
