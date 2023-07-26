@@ -10,6 +10,7 @@
     - [`scenario-4`: introducing state and errors checking in automated tests](#scenario-4-introducing-state-and-errors-checking-in-automated-tests)
     - [`scenario-5`: testing the endpoints of an API](#scenario-5-testing-the-endpoints-of-an-api)
     - [`scenario-6`: automated tests and I/O: uploads and fixtures](#scenario-6-automated-tests-and-io-uploads-and-fixtures)
+    - [`scenario-7`: test theories](#scenario-7-test-theories)
     - [`scenario-x`: our first integration test against a database](#scenario-x-our-first-integration-test-against-a-database)
     - [`scenario-x`: testing an NLP interface](#scenario-x-testing-an-nlp-interface)
   - [Prerequisites (assuming you're on Ubuntu)](#prerequisites-assuming-youre-on-ubuntu)
@@ -22,6 +23,10 @@
 This repo contains a few scenarii in NodeJS to help you get started with testing your NodeJS applications.
 
 All the scenarii are located in the `scenarii` folder, and are organized into `scenario-<number>` subfolders.
+
+So let's enjoy this testing bonanza !
+
+<!-- ! even the most elaborate test is just a demo, don't push the code as is in production -->
 
 ## Tests scenarii
 
@@ -68,6 +73,12 @@ We will use a lib called `supertest` to do that. This lib is a high-level abstra
 ### `scenario-6`: automated tests and I/O: uploads and fixtures
 
 In this scenario, we'll get acquainted with the concept of fixtures, which are files that are used as inputs for our tests. Also, we will see how to upload files to our API in our automated tests.
+
+### `scenario-7`: test theories
+
+Sometimes, writing more or less the same tests, but with different inputs, can be very tedious and repetitive, even with AI assisted tools. This is where test theories come into play.
+
+In this scenario, we will see how to test theories, which are a way to test a function with different inputs and expected outputs.
 
 ### `scenario-x`: our first integration test against a database
 
