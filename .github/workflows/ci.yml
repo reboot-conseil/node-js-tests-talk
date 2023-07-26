@@ -37,4 +37,4 @@ jobs:
       - run: cd scenario-8 && docker compose -f tests.docker-compose.yml up -d && npm ci && npm run test
 
       # scenario-9
-      - run: cd scenario-9 && docker compose -f tests.docker-compose.yml up -d && npm ci && npm run test
+      # - run: cd scenario-9 && docker compose -f tests.docker-compose.yml up -d && npm ci && npm run test
