@@ -13,8 +13,9 @@
     - [`scenario-6`: automated tests and I/O: uploads and fixtures](#scenario-6-automated-tests-and-io-uploads-and-fixtures)
     - [`scenario-7`: test theories](#scenario-7-test-theories)
     - [`scenario-8`: our first integration test against a database](#scenario-8-our-first-integration-test-against-a-database)
-    - [`scenario-9`: spy and mocks](#scenario-9-spy-and-mocks)
+    - [`scenario-9`: spies and mocks](#scenario-9-spies-and-mocks)
     - [`scenario-X`: testing an NLP interface](#scenario-x-testing-an-nlp-interface)
+    - [wrapping it up](#wrapping-it-up)
   - [Prerequisites (assuming you're on Ubuntu)](#prerequisites-assuming-youre-on-ubuntu)
   - [Contribution guidelines](#contribution-guidelines)
   - [Contributors](#contributors)
@@ -97,13 +98,20 @@ Containers have made that sooo much easier, so we will use a docker container to
 
 We will also allow this to run in a CI.
 
-<!-- TODO -->
-### `scenario-9`: spy and mocks
+### `scenario-9`: spies and mocks
 
 In this scenario, we will see examples of how to use spies and mocks in automated tests.
 
 <!-- TODO -->
 ### `scenario-X`: testing an NLP interface
+
+### wrapping it up
+
+We did not practice TDD during this workshop because the main point here was to show you a few ways of solving common problems when writing automated tests in NodeJS. However I encourage you to always follow the `red green refactor` cycle when writing your applications.
+
+You will spend more time building meaningful specs, you will be confident in your code, and you will ship less bugs in the long run!
+
+Remember: _writing tests is actually writing code_.
 
 ## Prerequisites (assuming you're on Ubuntu)
 
