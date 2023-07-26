@@ -7,6 +7,10 @@
     - [`scenario-1`: I automate unit tests](#scenario-1-i-automate-unit-tests)
     - [`scenario-2`: I put my tests in a CI pipeline](#scenario-2-i-put-my-tests-in-a-ci-pipeline)
     - [`scenario-3`: the `arrange act assert` pattern](#scenario-3-the-arrange-act-assert-pattern)
+    - [`scenario-4`: introducing state and errors checking in automated tests](#scenario-4-introducing-state-and-errors-checking-in-automated-tests)
+    - [`scenario-5`: our first integration test against a database](#scenario-5-our-first-integration-test-against-a-database)
+    - [`scenario-6`: testing the endpoints of an API](#scenario-6-testing-the-endpoints-of-an-api)
+    - [`scenario-x`: testing an NLP interface](#scenario-x-testing-an-nlp-interface)
   - [Prerequisites (assuming you're on Ubuntu)](#prerequisites-assuming-youre-on-ubuntu)
   - [Contribution guidelines](#contribution-guidelines)
   - [Contributors](#contributors)
@@ -45,6 +49,27 @@ Also, you can be sure that:
 In this scenario, we take a dive into the `arrange act assert` pattern, which is a way to structure your tests so that they are easy to read and maintain.
 
 This pattern helps you build various tests scenarii for your application, and it is a good way to start thinking about the behavior of your application.
+
+### `scenario-4`: introducing state and errors checking in automated tests
+
+Sometimes, you want to test a function that depends on some state, and you want to test that function with different states. We also want to do that by keeping a consistent state. In this scenario, we will see how to do that.
+
+Also, depending on what is the expected state of the program, you may want to throw some errors. We will see how to test that.
+
+<!-- TODO -->
+### `scenario-5`: our first integration test against a database
+
+An integration test is a type of software testing that checks if different modules of an application work together as expected. It verifies that the components of the system can communicate and exchange data correctly.
+
+In this scenario, we are adding to our previous tests a test that will check that our application is able to connect to a database and perform some operations on it.
+
+We will also allow this to run in a CI.
+
+<!-- TODO -->
+### `scenario-6`: testing the endpoints of an API
+
+<!-- TODO -->
+### `scenario-x`: testing an NLP interface
 
 ## Prerequisites (assuming you're on Ubuntu)
 
