@@ -66,7 +66,7 @@ class DbService {
                 throw new Error(exports.MIGRATIONS_FOLDER_NOT_SET_CORRECTLY);
             }
             const migrations = [];
-            fs_1.default.readdirSync(process.env.MIGRATIONS_FOLDER).forEach((fileName) => {
+            fs_1.default.readdirSync(migrationsFolder).forEach((fileName) => {
                 const filePatternRegex = /^[0-9][0-9][0-9][1-9]\_[a-zA-Z0-9_-]+\.psql$/;
                 if (filePatternRegex.test(fileName)) {
                     migrations.push(fileName);
@@ -83,7 +83,7 @@ class DbService {
                 const migrationName = migration.split(".")[0];
                 const migrationAlreadyRun = yield this.query(`SELECT * FROM migrations WHERE name = $1`, [migrationName]);
                 if (migrationAlreadyRun.rowCount === 0) {
-                    const migrationContent = fs_1.default.readFileSync(`${process.env.MIGRATIONS_FOLDER}/${migration}`, "utf-8");
+                    const migrationContent = fs_1.default.readFileSync(`${migrationsFolder}/${migration}`, "utf-8");
                     yield this.query(migrationContent);
                     yield this.query(`INSERT INTO migrations(name) VALUES($1)`, [migrationName]);
                 }

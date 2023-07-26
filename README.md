@@ -13,7 +13,8 @@
     - [`scenario-6`: automated tests and I/O: uploads and fixtures](#scenario-6-automated-tests-and-io-uploads-and-fixtures)
     - [`scenario-7`: test theories](#scenario-7-test-theories)
     - [`scenario-8`: our first integration test against a database](#scenario-8-our-first-integration-test-against-a-database)
-    - [`scenario-x`: testing an NLP interface](#scenario-x-testing-an-nlp-interface)
+    - [`scenario-9`: spy and mocks](#scenario-9-spy-and-mocks)
+    - [`scenario-X`: testing an NLP interface](#scenario-x-testing-an-nlp-interface)
   - [Prerequisites (assuming you're on Ubuntu)](#prerequisites-assuming-youre-on-ubuntu)
   - [Contribution guidelines](#contribution-guidelines)
   - [Contributors](#contributors)
@@ -96,7 +97,13 @@ Containers have made that sooo much easier, so we will use a docker container to
 
 We will also allow this to run in a CI.
 
-### `scenario-x`: testing an NLP interface
+<!-- TODO -->
+### `scenario-9`: spy and mocks
+
+In this scenario, we will see how to use spies and mocks un automated tests.
+
+<!-- TODO -->
+### `scenario-X`: testing an NLP interface
 
 ## Prerequisites (assuming you're on Ubuntu)
 
