@@ -100,7 +100,7 @@ We will also allow this to run in a CI.
 <!-- TODO -->
 ### `scenario-9`: spy and mocks
 
-In this scenario, we will see how to use spies and mocks un automated tests.
+In this scenario, we will see examples of how to use spies and mocks in automated tests.
 
 <!-- TODO -->
 ### `scenario-X`: testing an NLP interface
