@@ -26,3 +26,6 @@ jobs:
 
       # scenario-5
       - run: cd scenario-5 && npm ci && npm run test
+
+      # scenario-6
+      - run: cd scenario-6 && npm ci && npm run test

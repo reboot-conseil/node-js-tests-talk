@@ -1,3 +1,4 @@
+/// <reference types="@types/jest" />
 import binarySearchNumbers from "../src/index";
 
 describe("binarySearchNumbers", () => {

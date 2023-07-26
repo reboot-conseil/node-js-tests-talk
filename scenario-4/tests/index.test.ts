@@ -1,3 +1,4 @@
+/// <reference types="@types/jest" />
 import { generateJwt, verifyJwt } from "../src/index";
 
 describe("generateJwt", () => {

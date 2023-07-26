@@ -9,6 +9,7 @@
     - [`scenario-3`: the `arrange act assert` pattern](#scenario-3-the-arrange-act-assert-pattern)
     - [`scenario-4`: introducing state and errors checking in automated tests](#scenario-4-introducing-state-and-errors-checking-in-automated-tests)
     - [`scenario-5`: testing the endpoints of an API](#scenario-5-testing-the-endpoints-of-an-api)
+    - [`scenario-6`: automated tests and I/O: uploads and fixtures](#scenario-6-automated-tests-and-io-uploads-and-fixtures)
     - [`scenario-x`: our first integration test against a database](#scenario-x-our-first-integration-test-against-a-database)
     - [`scenario-x`: testing an NLP interface](#scenario-x-testing-an-nlp-interface)
   - [Prerequisites (assuming you're on Ubuntu)](#prerequisites-assuming-youre-on-ubuntu)
@@ -64,14 +65,18 @@ It is unlikely that you wil only write pure functions in your application. You w
 
 We will use a lib called `supertest` to do that. This lib is a high-level abstraction of an HTTP client. This is why we can say that such tests are integration tests: they test the interaction between the client and the server under given conditions.
 
-<!-- TODO -->
+### `scenario-6`: automated tests and I/O: uploads and fixtures
+
+In this scenario, we'll get acquainted with the concept of fixtures, which are files that are used as inputs for our tests. Also, we will see how to upload files to our API in our automated tests.
+
 ### `scenario-x`: our first integration test against a database
 
 In this scenario, we are adding to our previous tests a test that will check that our application is able to connect to a database and perform some operations on it.
 
+Containers have made that sooo much easier, so we will use a docker container to run our database.
+
 We will also allow this to run in a CI.
 
-<!-- TODO -->
 ### `scenario-x`: testing an NLP interface
 
 ## Prerequisites (assuming you're on Ubuntu)
