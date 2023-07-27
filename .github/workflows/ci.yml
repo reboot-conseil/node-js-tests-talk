@@ -40,6 +40,5 @@ jobs:
       - run: cd scenario-9 && npm ci && npm run test
 
       # scenario-X
-      - run: | 
-          echo "${{ secrets.DOTENV }}" > .env \
-          cd scenario-X && npm ci && npm run test
+      # copying the env var stored in github secrets to the .env file
+      - run: cd scenario-X && echo "${{ secrets.DOTENV }}" > .env && npm ci && npm run test
