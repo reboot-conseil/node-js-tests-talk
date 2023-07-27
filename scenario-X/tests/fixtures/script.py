@@ -1,0 +1,1 @@
+print("I'a dummy script!")

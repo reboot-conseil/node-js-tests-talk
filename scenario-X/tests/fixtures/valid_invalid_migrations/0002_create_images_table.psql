@@ -1,0 +1,7 @@
+CREATE TABLE images (
+    alt VARCHAR(255) NOT NULL,
+    author_name VARCHAR(255) NULL,
+    caption VARCHAR(255) NULL,
+    id SERIAL PRIMARY KEY,
+    src VARCHAR(255) NOT NULL
+);

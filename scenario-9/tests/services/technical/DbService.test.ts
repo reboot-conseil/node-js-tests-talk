@@ -1,3 +1,4 @@
+/// <reference types="@types/jest" />
 import { exec } from "child_process";
 
 import DbService, { DB_UNREACHABLE, MIGRATIONS_FOLDER_NOT_SET_CORRECTLY } from "../../../src/services/technical/DbService";

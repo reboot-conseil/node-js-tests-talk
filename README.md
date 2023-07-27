@@ -14,9 +14,8 @@
     - [`scenario-7`: test theories](#scenario-7-test-theories)
     - [`scenario-8`: our first integration test against a database](#scenario-8-our-first-integration-test-against-a-database)
     - [`scenario-9`: spies and mocks](#scenario-9-spies-and-mocks)
-    - [`scenario-X`: testing an NLP interface](#scenario-x-testing-an-nlp-interface)
+    - [`scenario-X`: the Future =\> testing an NLP interface using AI](#scenario-x-the-future--testing-an-nlp-interface-using-ai)
     - [wrapping it up](#wrapping-it-up)
-  - [Prerequisites (assuming you're on Ubuntu)](#prerequisites-assuming-youre-on-ubuntu)
   - [Contribution guidelines](#contribution-guidelines)
   - [Contributors](#contributors)
 
@@ -102,8 +101,11 @@ We will also allow this to run in a CI.
 
 In this scenario, we will see examples of how to use spies and mocks in automated tests.
 
-<!-- TODO -->
-### `scenario-X`: testing an NLP interface
+### `scenario-X`: the Future => testing an NLP interface using AI
+
+In this scenario, we will see how to test an NLP interface. It's sooooooooooooo 2023 and beyond !
+
+In the meantime, we will see an actual functional test into play.
 
 ### wrapping it up
 
@@ -112,10 +114,6 @@ We did not practice TDD during this workshop because the main point here was to 
 You will spend more time building meaningful specs, you will be confident in your code, and you will ship less bugs in the long run!
 
 Remember: _writing tests is actually writing code_.
-
-## Prerequisites (assuming you're on Ubuntu)
-
-- NodeJS >=18.x.x 
 
 ## Contribution guidelines
 
