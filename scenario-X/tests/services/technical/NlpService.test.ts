@@ -58,7 +58,7 @@ describe("NlpService", () => {
             it("with an informative message about geopolitics, it should return true", async () => {
                 // arrange
                 const nlpService = new NlpService();
-                const message = "Russia and the USA have signed an anti nuclear treaty.";
+                const message = "Russia and the USA have signed an anti nuclear treaty today.";
                 // act
                 const actual = await nlpService.valideBotOutputBeforeSendingItToTheUser(message, {
                     expectedTone: "informative",
