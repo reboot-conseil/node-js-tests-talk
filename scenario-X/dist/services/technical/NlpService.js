@@ -70,11 +70,11 @@ class NlpService {
             const aiEvaluation = yield this.sendMultipleMessagesToGiveContextToTheAI([
                 {
                     role: "system",
-                    content: "You are to answer only 'yes' or 'no' to all inputs.",
+                    content: "You are not authorized to say more than 'yes' or 'no' to the input.",
                 },
                 {
                     role: "user",
-                    content: `Does the ${message} have a ${schema.expectedTone} tone ? Is is related to ${schema.subject} ?`,
+                    content: `Does the ${message} have a ${schema.expectedTone} tone ? Is it related to ${schema.subject} ?`,
                 }
             ]);
             if (aiEvaluation.toLowerCase().trim().replace(/\./g, "") != "yes") {

@@ -66,9 +66,9 @@ describe("api", () => {
         });
 
         const theories = [
-            {input: {encoding: "utf-8", path: "./fixtures/upload.txt"}, expected: readFileSync(path.resolve(__dirname, "./fixtures/upload.txt"), "utf-8")},
-            {input: {encoding: "base64", path: "./fixtures/kebap.jpg"}, expected: readFileSync(path.resolve(__dirname, "./fixtures/kebap.jpg"), "base64")},
-            {input: {encoding: "utf-8", path: "./fixtures/script.py"}, expected: readFileSync(path.resolve(__dirname, "./fixtures/script.py"), "utf-8")}
+            {input: {encoding: "utf-8", path: "./fixtures/upload.txt"}, expected: readFileSync("uploads/upload.txt", "utf-8")},
+            {input: {encoding: "base64", path: "./fixtures/kebap.jpg"}, expected: readFileSync("uploads/kebap.jpg", "base64")},
+            {input: {encoding: "utf-8", path: "./fixtures/script.py"}, expected: readFileSync("uploads/script.py", "utf-8")}
         ];
         jestTheories("with various uploads of various types, should return a 201 status code and the expected payload each time", theories, async (theory) => {
             // arrange
